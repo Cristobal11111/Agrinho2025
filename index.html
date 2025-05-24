@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agricultura Familiar | Motor da Economia Global</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="img/logo morelli.png" alt="Logo morelli" class="logo">
+        <div class="header-content">
+            <h1>Agricultura Familiar</h1>
+            <p>O coração da economia global</p>
+        </div>
+        <img src="img/agrinho 2025.png" alt="Logo Agrinho 2025" class="logo">
+    </header>
+    
+    <main>
+        <section class="intro">
+            <p>Um espaço para destacar a importância da agricultura familiar na alimentação mundial e no desenvolvimento econômico</p>
+        </section>
+        
+        <section class="noticias">
+            <article class="noticia">
+                <div class="noticia-content">
+                    <h2>O Pilar da Alimentação Mundial</h2>
+                    <p>A agricultura familiar é responsável por produzir mais de 70% dos alimentos consumidos globalmente. Com apenas 25% das terras agrícolas, esses pequenos produtores alimentam bilhões de pessoas enquanto preservam a biodiversidade e mantêm tradições culturais.</p>
+                </div>
+            </article>
+            
+            <article class="noticia">
+                <div class="noticia-content">
+                    <h2>Motor da Economia Rural</h2>
+                    <p>Movimentando US$ 1.2 trilhões anualmente, a agricultura familiar sustenta 40% da população economicamente ativa no mundo. No Brasil, representa 77% dos estabelecimentos agrícolas e é responsável por 38% do valor bruto da produção agropecuária.</p>
+                </div>
+            </article>
+            
+            <article class="noticia">
+                <div class="noticia-content">
+                    <h2>Sustentabilidade e Biodiversidade</h2>
+                    <p>As pequenas propriedades familiares utilizam métodos tradicionais que preservam os solos e a biodiversidade. Cultivando uma variedade maior de espécies que a agricultura industrial, são essenciais para a segurança alimentar e adaptação às mudanças climáticas.</p>
+                </div>
+            </article>
+            
+            <article class="noticia">
+                <div class="noticia-content">
+                    <h2>Inovação no Campo Familiar</h2>
+                    <p>A agricultura 4.0 está revolucionando as pequenas propriedades. Desde aplicativos para gestão até drones para monitoramento de cultivos, a tecnologia está aumentando a produtividade enquanto mantém os princípios da agricultura sustentável.</p>
+                </div>
+            </article>
+            
+            <article class="noticia">
+                <div class="noticia-content">
+                    <h2>O Papel das Mulheres</h2>
+                    <p>As mulheres representam 43% da força de trabalho na agricultura familiar global. Sua contribuição vai além do trabalho no campo, incluindo a preservação de sementes tradicionais e a transmissão de conhecimentos ancestrais.</p>
+                </div>
+            </article>
+            
+            <article class="noticia">
+                <div class="noticia-content">
+                    <h2>Políticas de Apoio</h2>
+                    <p>Programas como o PRONAF no Brasil e iniciativas da FAO globalmente têm sido essenciais para capacitar e financiar pequenos agricultores. Essas políticas fortalecem cadeias produtivas locais e melhoram a qualidade de vida no campo.</p>
+                </div>
+            </article>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Agrinho - Agricultura Familiar e Economia Global</p>
+        <div class="footer-links">
+            <a href="#">Sobre o Projeto</a>
+            <a href="#">Dados e Estatísticas</a>
+            <a href="#">Como Apoiar</a>
+        </div>
+    </footer>
+</body>
+<!-- Añade esto justo antes del cierre de </body> -->
+<div id="settings-container">
+  <button id="settings-toggle">⚙️ Configuração</button>
+  <div id="settings-menu" class="hidden">
+    <div class="setting-group">
+      <label>Tema:</label>
+      <button id="theme-dark">Oscuro</button>
+      <button id="theme-light">Claro</button>
+    </div>
+    <div class="setting-group">
+      <label>Texto:</label>
+      <button id="text-sm">A-</button>
+      <button id="text-md" class="active">A</button>
+      <button id="text-lg">A+</button>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* Estilos para los ajustes - no interfieren con tu CSS existente */
+  #settings-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+  
+  #settings-toggle {
+    background: #2E7D32;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s;
+  }
+  
+  #settings-toggle:hover {
+    background: #4CAF50;
+    transform: scale(1.05);
+  }
+  
+  #settings-menu {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    width: 200px;
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+  }
+  
+  .setting-group {
+    margin-bottom: 15px;
+  }
+  
+  .setting-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .setting-group button {
+    background: #f0f0f0;
+    border: none;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .setting-group button:hover {
+    background: #e0e0e0;
+  }
+  
+  .setting-group button.active {
+    background: #2E7D32;
+    color: white;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* Clases para los temas */
+  .dark-mode {
+    background-color: #121212 !important;
+    color: #f0f0f0 !important;
+  }
+  
+  .dark-mode header,
+  .dark-mode .noticia {
+    background-color: #1e1e1e !important;
+    color: #f0f0f0 !important;
+  }
+  
+  /* Clases para tamaños de texto */
+  .text-sm { font-size: 14px !important; }
+  .text-md { font-size: 16px !important; }
+  .text-lg { font-size: 18px !important; }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const settingsToggle = document.getElementById('settings-toggle');
+    const settingsMenu = document.getElementById('settings-menu');
+    const themeDark = document.getElementById('theme-dark');
+    const themeLight = document.getElementById('theme-light');
+    const textSm = document.getElementById('text-sm');
+    const textMd = document.getElementById('text-md');
+    const textLg = document.getElementById('text-lg');
+    
+    // Toggle del menú
+    settingsToggle.addEventListener('click', function() {
+      settingsMenu.classList.toggle('hidden');
+    });
+    
+    // Cambiar a tema oscuro
+    themeDark.addEventListener('click', function() {
+      document.body.classList.add('dark-mode');
+      themeDark.classList.add('active');
+      themeLight.classList.remove('active');
+      savePreference('theme', 'dark');
+    });
+    
+    // Cambiar a tema claro
+    themeLight.addEventListener('click', function() {
+      document.body.classList.remove('dark-mode');
+      themeLight.classList.add('active');
+      themeDark.classList.remove('active');
+      savePreference('theme', 'light');
+    });
+    
+    // Cambiar tamaño de texto
+    textSm.addEventListener('click', function() {
+      document.body.classList.remove('text-md', 'text-lg');
+      document.body.classList.add('text-sm');
+      updateTextButtons('text-sm');
+      savePreference('textSize', 'text-sm');
+    });
+    
+    textMd.addEventListener('click', function() {
+      document.body.classList.remove('text-sm', 'text-lg');
+      document.body.classList.add('text-md');
+      updateTextButtons('text-md');
+      savePreference('textSize', 'text-md');
+    });
+    
+    textLg.addEventListener('click', function() {
+      document.body.classList.remove('text-sm', 'text-md');
+      document.body.classList.add('text-lg');
+      updateTextButtons('text-lg');
+      savePreference('textSize', 'text-lg');
+    });
+    
+    // Actualizar botones de texto
+    function updateTextButtons(size) {
+      [textSm, textMd, textLg].forEach(btn => btn.classList.remove('active'));
+      document.getElementById(size.replace('text-', 'text-')).classList.add('active');
+    }
+    
+    // Guardar preferencias
+    function savePreference(key, value) {
+      const preferences = JSON.parse(localStorage.getItem('pagePreferences')) || {};
+      preferences[key] = value;
+      localStorage.setItem('pagePreferences', JSON.stringify(preferences));
+    }
+    
+    // Cargar preferencias
+    function loadPreferences() {
+      const preferences = JSON.parse(localStorage.getItem('pagePreferences')) || {};
+      
+      if (preferences.theme === 'dark') {
+        themeDark.click();
+      } else {
+        themeLight.click();
+      }
+      
+      if (preferences.textSize) {
+        document.getElementById(preferences.textSize.replace('text-', 'text-')).click();
+      }
+    }
+    
+    // Cargar al iniciar
+    loadPreferences();
+    
+    // Hacer que el menú siga al botón al hacer scroll
+    window.addEventListener('scroll', function() {
+      const toggleRect = settingsToggle.getBoundingClientRect();
+      settingsMenu.style.bottom = `${window.innerHeight - toggleRect.top + 10}px`;
+      settingsMenu.style.right = `${window.innerWidth - toggleRect.right}px`;
+    });
+  });
+</script>
+</html>
